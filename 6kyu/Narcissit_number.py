@@ -18,9 +18,6 @@ def narcissistic( value ):
 
     for i in range(range_value):
         temporal_number = int(string_value[i])
-        number = number + (temporal_number**range_value)
+        number += (temporal_number**range_value)
 
     return True if number == value else False
-
-
-print(narcissistic(13))
